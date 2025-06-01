@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Ana Sayfa</title>
+    <link rel="icon" href="/mnt/datas/Codes/AnaSayfa/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <a href="file:///mnt/datas/Codes/AnaSayfa/index.html">
+                        <img src="./favicon-32x32.png" alt="Site Logo">
+                    </a>
+                </h1>
+                <button class="settings-toggle" id="settingsToggle">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+            
+            <div class="settings-panel" id="settingsPanel">
+                <div class="settings-content">
+                    <div class="settings-section">
+                        <h3>Görünüm</h3>
+                        <div class="setting-item">
+                            <label>Tema Modu:</label>
+                            <div class="theme-buttons">
+                                <button class="theme-btn" id="lightThemeBtn">
+                                    <i class="fas fa-sun"></i> Açık
+                                </button>
+                                <button class="theme-btn" id="darkThemeBtn">
+                                    <i class="fas fa-moon"></i> Koyu
+                                </button>
+                            </div>
+                        </div>
+                        <div class="setting-item">
+                            <label>Tema Paleti:</label>
+                            <div class="palette-options" id="paletteOptions">
+                            </div>
+                        </div>
+                        <div class="setting-item">
+                            <label>Arkaplan Rengi:</label>
+                            <div class="background-options" id="backgroundOptions">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-section">
+                        <h3>Linkler</h3>
+                        <div class="setting-item">
+                            <button class="add-link-btn" id="addLinkBtn">
+                                <i class="fas fa-plus"></i> Yeni Link Ekle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="search-section">
+                <div class="search-container">
+                    <i class="fab fa-google search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Google'da ara..." id="searchInput">
+                    <button class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </section>
+
+            <section class="motivation-section">
+                <div class="motivation-quote" id="motivationQuote"></div>
+            </section>
+
+            <section class="pomodoro-section">
+                <div class="pomodoro-title">Pomodoro Zamanlayıcı</div>
+                <div class="pomodoro-timer" id="pomodoroTimer">25:00</div>
+                <div class="pomodoro-controls">
+                    <button id="pomodoroStart">Başlat</button>
+                    <button id="pomodoroPause">Duraklat</button>
+                    <button id="pomodoroReset">Sıfırla</button>
+                    <div class="stats-container">
+                        <button id="pomodoroStats" class="stats-btn">
+                            <i class="fas fa-chart-bar"></i>
+                        </button>
+                        
+                        <div class="pomodoro-stats" id="pomodoroStatsPanel">
+                            <div class="stats-header">
+                                <h3>Pomodoro İstatistikleri</h3>
+                                <button class="close-stats" id="closeStats">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div class="stats-content">
+                                <div class="stat-item">
+                                    <span class="stat-label">Bugün:</span>
+                                    <span class="stat-value" id="todayCount">0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Bu Hafta:</span>
+                                    <span class="stat-value" id="weekCount">0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Toplam:</span>
+                                    <span class="stat-value" id="totalCount">0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">En İyi Gün:</span>
+                                    <span class="stat-value" id="bestDay">-</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="links-section">
+                <h2 class="section-title">Hızlı Erişim</h2>
+                <div class="links-grid" id="linksGrid">
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Her hakkı saklıdır.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
