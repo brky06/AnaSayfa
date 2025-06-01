@@ -93,7 +93,7 @@ AnaSayfa/
 
 ## Lisans
 
-Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasını inceleyin.
+Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için lisans dosyasını inceleyin.
 
 ## Ekran Görüntüleri
 
